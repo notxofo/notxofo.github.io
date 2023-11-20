@@ -1,2 +1,2 @@
 # notxofo.github.io
-My basic website
+A very basic website that I might update later on.
