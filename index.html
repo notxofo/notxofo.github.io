@@ -517,7 +517,7 @@
                     
                     <div class="spec-item">
                         <div class="spec-title">
-                            <i>🧠</i> RAM
+                            <i>💻</i> RAM
                         </div>
                         <div class="spec-value">32GB DDR4</div>
                     </div>
@@ -528,10 +528,575 @@
         
         <footer>
             <div class="socials">
-                <a href="https://steamcommunity.com/id/FrankOT/" class="social-link">🎮</a>
+                <a href="https://steamcommunity.com/id/notxofo/" class="social-link">🎮</a>
                 <a href="https://github.com/notxofo" class="social-link">🐙</a>
             </div>
-            <p>Created by Xofo and Copilot</p>
+            <p>Created by Xofo</p>
+        </footer>
+    </div>
+    
+    <!-- Simulated particles background effect with CSS -->
+    <div class="particles-js" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; opacity: 0.5; pointer-events: none;">
+        <svg width="100%" height="100%">
+            <defs>
+                <radialGradient id="dotGradient" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+                    <stop offset="0%" stop-color="#6c1bff" stop-opacity="0.8"/>
+                    <stop offset="100%" stop-color="#6c1bff" stop-opacity="0"/>
+                </radialGradient>
+            </defs>
+            <!-- Simulated particles - in a real site you might use a JS library -->
+            <circle cx="10%" cy="10%" r="1" fill="url(#dotGradient)"><animate attributeName="opacity" dur="3s" values="0.2;0.5;0.2" repeatCount="indefinite"/></circle>
+            <circle cx="20%" cy="60%" r="1.5" fill="url(#dotGradient)"><animate attributeName="opacity" dur="5s" values="0.3;0.6;0.3" repeatCount="indefinite"/></circle>
+            <circle cx="25%" cy="15%" r="1" fill="url(#dotGradient)"><animate attributeName="opacity" dur="4s" values="0.1;0.4;0.1" repeatCount="indefinite"/></circle>
+            <circle cx="30%" cy="45%" r="1.2" fill="url(#dotGradient)"><animate attributeName="opacity" dur="3.5s" values="0.4;0.7;0.4" repeatCount="indefinite"/></circle>
+            <circle cx="40%" cy="20%" r="1" fill="url(#dotGradient)"><animate attributeName="opacity" dur="4.5s" values="0.2;0.5;0.2" repeatCount="indefinite"/></circle>
+            <circle cx="45%" cy="70%" r="1.3" fill="url(#dotGradient)"><animate attributeName="opacity" dur="4s" values="0.3;0.6;0.3" repeatCount="indefinite"/></circle>
+            <circle cx="55%" cy="30%" r="1" fill="url(#dotGradient)"><animate attributeName="opacity" dur="3s" values="0.2;0.5;0.2" repeatCount="indefinite"/></circle>
+            <circle cx="60%" cy="80%" r="1.4" fill="url(#dotGradient)"><animate attributeName="opacity" dur="5s" values="0.3;0.7;0.3" repeatCount="indefinite"/></circle>
+            <circle cx="70%" cy="25%" r="1.1" fill="url(#dotGradient)"><animate attributeName="opacity" dur="4s" values="0.2;0.6;0.2" repeatCount="indefinite"/></circle>
+            <circle cx="75%" cy="65%" r="1" fill="url(#dotGradient)"><animate attributeName="opacity" dur="3.5s" values="0.3;0.5;0.3" repeatCount="indefinite"/></circle>
+            <circle cx="80%" cy="35%" r="1.2" fill="url(#dotGradient)"><animate attributeName="opacity" dur="4.5s" values="0.2;0.5;0.2" repeatCount="indefinite"/></circle>
+            <circle cx="85%" cy="75%" r="1" fill="url(#dotGradient)"><animate attributeName="opacity" dur="4s" values="0.3;0.6;0.3" repeatCount="indefinite"/></circle>
+            <circle cx="90%" cy="15%" r="1.3" fill="url(#dotGradient)"><animate attributeName="opacity" dur="3s" values="0.2;0.5;0.2" repeatCount="indefinite"/></circle>
+            <circle cx="95%" cy="85%" r="1" fill="url(#dotGradient)"><animate attributeName="opacity" dur="5s" values="0.3;0.7;0.3" repeatCount="indefinite"/></circle>
+        </svg>
+    </div>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xofo's Site</title>
+    <style>
+        /* Font imports */
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+        
+        /* Reset and base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        :root {
+            --primary: #6c1bff;
+            --secondary: #3448ff;
+            --dark-bg: #0d0b16;
+            --card-bg: rgba(27, 20, 56, 0.7);
+            --text: #ffffff;
+            --text-secondary: #b2a9d9;
+            --accent: #ff2edf;
+            --glow: 0 0 15px rgba(108, 27, 255, 0.7);
+        }
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--dark-bg);
+            color: var(--text);
+            line-height: 1.6;
+            overflow-x: hidden;
+            background: radial-gradient(circle at top left, #1f1f3d, #0d0b16), 
+                        radial-gradient(circle at bottom right, #191654, #0d0b16);
+            background-attachment: fixed;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        /* Particles background */
+        .particles-js {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+        }
+        
+        /* Header */
+        header {
+            position: relative;
+            padding: 40px 0 20px;
+            text-align: center;
+        }
+        
+        .logo {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 5rem;
+            font-weight: 800;
+            letter-spacing: 2px;
+            background: linear-gradient(to right, var(--primary), var(--accent));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 10px;
+            position: relative;
+            display: inline-block;
+            text-shadow: var(--glow);
+        }
+        
+        .logo::after {
+            content: 'xofo';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            color: transparent;
+            -webkit-text-stroke: 1px rgba(108, 27, 255, 0.3);
+            filter: blur(4px);
+        }
+        
+        .tagline {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+            margin-bottom: 30px;
+        }
+        
+        /* Main content */
+        .main-content {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 40px;
+            padding: 20px 0 80px;
+        }
+        
+        /* Bio Card */
+        .bio-card {
+            background: var(--card-bg);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(108, 27, 255, 0.2);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .bio-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(to right, var(--primary), var(--secondary), var(--accent));
+        }
+        
+        .bio-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+            gap: 20px;
+        }
+        
+        .avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background: url('https://cdn.discordapp.com/attachments/735419237232803862/1386502944379371571/image.png?ex=6859f0fd&is=68589f7d&hm=aeb2cd666a4d35da3006bb5c0d016bea10713527466cbc4380caca28b0706e41&') no-repeat center center;
+            background-size: cover;
+            border: 3px solid rgba(255, 255, 255, 0.2);
+            box-shadow: var(--glow);
+        }
+        
+        .bio-title {
+            flex: 1;
+        }
+        
+        .bio-title h2 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 2.5rem;
+            margin-bottom: 5px;
+            background: linear-gradient(to right, #ffffff, #b2a9d9);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .bio-title p {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+        }
+        
+        .bio-content {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 30px;
+            color: var(--text);
+        }
+        
+        .highlight {
+            color: var(--accent);
+            font-weight: 600;
+        }
+        
+        ul.bio-list {
+            list-style: none;
+            margin-left: 10px;
+        }
+        
+        ul.bio-list li {
+            position: relative;
+            padding-left: 25px;
+            margin-bottom: 15px;
+        }
+        
+        ul.bio-list li::before {
+            content: '›';
+            position: absolute;
+            left: 0;
+            color: var(--accent);
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        
+        /* Specs Card */
+        .specs-card {
+            background: var(--card-bg);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(108, 27, 255, 0.2);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .specs-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(to right, var(--secondary), var(--accent), var(--primary));
+        }
+        
+        .specs-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 30px;
+        }
+        
+        .specs-header h2 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 2rem;
+            background: linear-gradient(to right, #ffffff, #b2a9d9);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .specs-icon {
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, var(--secondary), var(--primary));
+            border-radius: 50%;
+            box-shadow: var(--glow);
+            font-size: 1.8rem;
+        }
+        
+        .specs-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+        
+        .spec-item {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .spec-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+            background: rgba(255, 255, 255, 0.08);
+        }
+        
+        .spec-title {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .spec-title i {
+            color: var(--accent);
+            font-size: 1.2rem;
+        }
+        
+        .spec-value {
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+        
+        /* Interests section */
+        .interests-card {
+            background: var(--card-bg);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(108, 27, 255, 0.2);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .interests-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(to right, var(--accent), var(--primary), var(--secondary));
+        }
+        
+        .interests-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 30px;
+        }
+        
+        .interests-header h2 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 2rem;
+            background: linear-gradient(to right, #ffffff, #b2a9d9);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .interests-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        
+        .interest-item {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+            padding: 25px 20px;
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .interest-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+            background: rgba(255, 255, 255, 0.08);
+        }
+        
+        .interest-icon {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            color: var(--accent);
+        }
+        
+        .interest-name {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+        
+        .interest-desc {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+        
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 30px 0;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            position: relative;
+        }
+        
+        .socials {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        
+        .social-link {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.2rem;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            text-decoration: none;
+        }
+        
+        .social-link:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--glow);
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .logo {
+                font-size: 3.5rem;
+            }
+            
+            .bio-header {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .bio-title h2 {
+                font-size: 2rem;
+            }
+            
+            .specs-grid, .interests-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .bio-card, .specs-card, .interests-card {
+                padding: 30px 20px;
+            }
+        }
+        
+        /* Animations */
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+        
+        .float-animation {
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        /* Neon effects */
+        .neon-line {
+            height: 1px;
+            background: linear-gradient(to right, transparent, var(--primary), var(--accent), var(--secondary), transparent);
+            margin: 30px 0;
+            opacity: 0.6;
+        }
+        
+        /* Scrollbar */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        
+        ::-webkit-scrollbar-track {
+            background: var(--dark-bg);
+        }
+        
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(var(--primary), var(--secondary));
+            border-radius: 5px;
+        }
+        
+        ::-webkit-scrollbar-thumb:hover {
+            background: linear-gradient(var(--accent), var(--primary));
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="logo">xofo</h1>
+        </header>
+        
+        <main class="main-content">
+            <section class="bio-card">
+                <div class="bio-header">
+                    <div class="avatar float-animation"></div>
+                    <div class="bio-title">
+                        <h2>About Me</h2>
+                    </div>
+                </div>
+                
+                <div class="bio-content">
+                    <p>Hi! I'm <span class="highlight">Xofo</span>, a 18 year old from Great Britain!</p>
+                    <p>I play a bunch of games, but I am currently playing <span class="highlight">Factorio</span> and <span class="highlight">Roblox.</span></p>
+                    <p>I also like to make music, I use <span class="highlight">FL Studio 24</span>, and I have been making music for about 12 months now.</p>
+                    <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/2117831907&color=%23191654&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/xofonot" title="xofo" target="_blank" style="color: #cccccc; text-decoration: none;">xofo</a> · <a href="https://soundcloud.com/xofonot/dire" title="dire" target="_blank" style="color: #cccccc; text-decoration: none;">dire</a></div>
+                </div>
+            </section>
+            
+            <div class="neon-line"></div>
+            
+            <section class="specs-card">
+                <div class="specs-header">
+                    <h2>My Setup</h2>
+                    <div class="specs-icon float-animation">💻</div>
+                </div>
+                
+                <div class="specs-grid">
+                    <div class="spec-item">
+                        <div class="spec-title">
+                            <i>💾</i> Storage
+                        </div>
+                        <div class="spec-value">1TB SSD + 2TB External SSD + 4TB HDD</div>
+                    </div>
+                    
+                    <div class="spec-item">
+                        <div class="spec-title">
+                            <i>🔧</i> Processor
+                        </div>
+                        <div class="spec-value">Intel Core i9-11900KF @ 3.50GHz</div>
+                    </div>
+                    
+                    <div class="spec-item">
+                        <div class="spec-title">
+                            <i>🎮</i> Graphics Card
+                        </div>
+                        <div class="spec-value">NVIDIA GeForce RTX 3060</div>
+                    </div>
+                    
+                    <div class="spec-item">
+                        <div class="spec-title">
+                            <i>💻</i> RAM
+                        </div>
+                        <div class="spec-value">32GB DDR4</div>
+                    </div>
+                </div>
+            </section>
+            
+            <div class="neon-line"></div>
+        
+        <footer>
+            <div class="socials">
+                <a href="https://steamcommunity.com/id/notxofo/" class="social-link">🎮</a>
+                <a href="https://github.com/notxofo" class="social-link">🐙</a>
+            </div>
+            <p>Created by Xofo</p>
         </footer>
     </div>
     
